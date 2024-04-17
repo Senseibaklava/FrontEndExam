@@ -1,0 +1,248 @@
+// Variabelen
+$primary-color: #f9004d;
+$secondary-color: #2a375e;
+$font-family: 'Josefin Sans', sans-serif;
+
+// Header
+header {
+    background-color: $secondary-color;
+    padding: 20px 0;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin-left: 20px;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .hero {
+        background-image: url('background1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+
+            h4 {
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 72px;
+                margin: 20px 0;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+// Over mij-sectie
+.about {
+    background-color: #191919;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-right: 50px;
+        }
+
+        .about-text {
+            width: 50%;
+            max-width: 600px;
+            text-align: left;
+
+            h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+// Specialiteiten-sectie
+.service {
+    background-color: #101010;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+
+    .title {
+        h2 {
+            font-size: 48px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #191919;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px;
+            flex: 1 1 300px;
+            max-width: 300px;
+
+            i {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .pra p {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .button {
+                background-color: $primary-color;
+                color: #fff;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 30px;
+                transition: .4s;
+            }
+
+            .button:hover {
+                background-color: transparent;
+                border: 2px solid $primary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Contact-sectie
+.contact-me {
+    background-color: #191919;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+
+    p {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .button-two {
+        background-color: $primary-color;
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+
+    .button-two:hover {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        cursor: pointer;
+    }
+}
+
+// Footer
+footer {
+    background-color: #101010;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+
+    .social-menu {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            background-color: $primary-color;
+            border-radius: 50%;
+            line-height: 50px;
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+// Mediaqueries
+@media screen and (max-width: 768px) {
+    // Mobile styles here
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    // Tablet styles here
+}
