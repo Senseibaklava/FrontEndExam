@@ -1,0 +1,245 @@
+/* Algemene opmaak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #2a375e;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero-sectie */
+.hero {
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h4 {
+    font-size: 24px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #f9004d;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+/* Over mij-sectie */
+.about {
+    background-color: #191919;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.about-text {
+    width: 50%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Specialiteiten-sectie */
+.service {
+    background-color: #101010;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.service .title h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.service .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service .card {
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.service .card i {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.service .card h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service .card .pra p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service .card .button {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.service .card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Contact-sectie */
+.contact-me {
+    background-color: #191919;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-me p {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-me .button-two {
+    background-color: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #101010;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer .social-menu {
+    margin-bottom: 30px;
+}
+
+.footer .social-menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.footer .social-menu a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #f9004d;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: transform .3s;
+}
+
+.footer .social-menu a:hover {
+    transform: scale(1.2);
+}
