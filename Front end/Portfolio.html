@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
-    <link rel="stylesheet" type="text/css" href="output.css">
+    <title>Portfolio website - Ali Shwani</title>
     <!-- Voeg eventuele externe stylesheets hier toe -->
+    <meta name="description" content="Portfolio website van Ali Shwani, een MBO student van Techniekcollegerotterdam. Hier vind je informatie over zijn specialiteiten en hoe je contact met hem kunt opnemen.">
+    <meta name="keywords" content="portfolio, website, Ali Shwani, MBO student, techniekcollegerotterdam, software developer, hacker">
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <header>
         <nav>
             <h1>Portfolio</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">Over mij</a></li>
-                <li><a href="#services">Mijn specialiteiten</a></li>
+                <li><a href="#services">Kennis & vaardigheden Projecten </a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -31,9 +36,10 @@
         <section id="about">
             <article class="about">
                 <div class="container">
-                    <img src="img/Ali.jpg" alt="Ali's foto">
+                    <!-- Lazy loading toegepast -->
+                    <img src="image1.png" alt="Ali's foto" loading="lazy">
                     <div class="about-text">
-                        <h2>About Me</h2>
+                        <h2>Over mij</h2>
                         <h3>Software developer <span>& Hacker</span></h3>
                         <p>Hallo mijn naam is Ali Shwani ik ben 16 jaar en zit op het techniekcollegerotterdam waar ik de opleiding Software developer doe. In mijn opleiding leer ik over verschillende talen over progammeren die gaan over HTML CSS JAVASCRIPT PHP en MYSQL.
                             Dit opleiding duurt ook 3 jaar waar je in het eerste jaar veel gaat leren en het 2e jaar op stage gaat en het laatste jaar afrond met een examen. Mijn carrièredoel is om mijn MBO diploma te halen en dan verder studeren in het HBO over Cybersecurity.
@@ -46,7 +52,7 @@
         <section id="services">
             <article class="service">
                 <div class="title">
-                    <h2>Mijn specialiteiten</h2>
+                    <h2>Kennis & vaardigheden Projecten </h2>
                 </div>
                 <div class="container">
                     <section class="card">
@@ -54,31 +60,52 @@
                         <h3>Web Development</h3>
                         <p>Ik maak websites voor klanten die een bedrijf hebben of gaan starten en daarmee help ik met het bouwen van een professionele website. Daarnaast doe ik ook aan Development waar ik bedrijven help om hun website te verbeteren.</p>
                     </section>
-                    <!-- Voeg andere specialiteitenkaarten hier toe -->
+                    <div class="container">
+                        <section class="card">
+                            <i class="fas fa-bars"></i>
+                            <h3>HTML en CSS</h3>
+                            <p>Ik ben bedreven in HTML en CSS, waardoor ik professionele websites kan bouwen en bestaande websites kan verbeteren met een eigentijdse uitstraling en functionaliteit.
+                            </p>
+                        </section>
+                    </div>
+                    <div class="container">
+                        <section class="card">
+                            <i class="fas fa-bars"></i>
+                            <h3>Werkervaring</h3>
+                            <p>Ik heb in het 2e jaar van mijn studie Stage Gelopen bij REMENKO AUTOMOTIVE waarbij ik veel ervaring heb gemaakt met wordpress en PHP</p>
+                        </section>
+                        <div class="container">
+                            <section class="card">
+                                <i class="fas fa-bars"></i>
+                                <h3>Mijn programeer skils</h3>
+                                <p>Ik ben bekwaam in een scala aan programmeertalen en omgevingen, waaronder JavaScript, HTML, CSS, PHP, Unity en SeaSharp. Deze vaardigheden stellen me in staat om diverse projecten te ontwikkelen en aan te passen.</p>
+                            </section> 
+                       <video controls src="VOORBEELDProject.mp4" width="400"></video>     
+                    </div>
                 </div>
             </article>
+            
         </section>
 
         <section id="contact">
             <article class="contact-me">
                 <div class="container">
-                    <h2>Contact met mij opnemen?</h2>
-                    <a class="button-two" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJfrtdLcKcFFdWmTzpJPqDFCQCMrVTgxMgvrJRCRSHNbTbVVFwPQVQfHqNZxbRMGlwxtcQB" target="_blank">Mail mij</a>
+                    <h2>Contact met mij opnemen? <br> Alishwanischool@gmail.com</h2>
                 </div>
             </article>
         </section>
     </main>
 
+    
     <footer>
         <article class="container">
             <div class="social">
                 <h2>Mijn socials</h2>
                 <a class="logo1" href="https://www.linkedin.com/in/ali-shwani-b12459257/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a class="github" href="https://github.com/Senseibaklava/p1-html-css-" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a class="github" href="https://github.com/Senseibaklava/FrontEndExam" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
                 <a class="twitter" href="https://twitter.com/senseibaklava" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
             </div>
         </article>
     </footer>
-
 </body>
 </html>

@@ -152,7 +152,7 @@ header .hero .content h3 {
 }
 .contact-me .button-two {
   background-color: #f9004d;
-  color: #fff;
+  color: rgb(15, 11, 4);
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
@@ -193,6 +193,33 @@ footer .social-menu a {
 }
 footer .social-menu a:hover {
   transform: scale(1.2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo1 {
+  color: #0e76a8;
+  font-size: 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.github {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.twitter {
+  color: #1DA1F2;
+  font-size: 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=output.css.map */
